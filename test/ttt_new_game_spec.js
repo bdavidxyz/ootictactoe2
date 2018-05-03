@@ -79,6 +79,6 @@ describe('ttt_new_game function', function() {
     //when
     ttt_new_game()
     //then
-    expect(game).toBeDefined()
+    expect(window.my_game).toBeDefined()
   });
 });
