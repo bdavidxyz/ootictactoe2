@@ -15,12 +15,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-        'src/lib/big.js',
-        'src/lib/moment.js',
-        'src/lib/lodash.js',
-        'src/lib/lodash_extension.js',
-        'src/lib/jquery.js',
-        'src/lib/jasmine-jquery.js',
+        'src/lib/*.js',
+        'testlib/jasmine-jquery.js',
         'test/spec_helpers.js',
         'test/*Spec.js',
         'src/utils/*.js',
