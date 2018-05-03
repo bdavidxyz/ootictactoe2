@@ -22,12 +22,12 @@ describe('ttt_asker_spec.js', function() {
     //then
     expect(window.prompt).toHaveBeenCalledWith("something");
   });
-  // it('Should return what the prompt returns', function() {
-  //   spyOn(window, "prompt").and.returnValue(42);
-  //   var asker = new Asker();
-  //   //when
-  //   asker.ask()
-  //   //then
-  //   expect(window.prompt).toHaveBeenCalledWith("What time it is ?");
-  // });
+  it('Should return what the prompt returns', function() {
+    spyOn(window, "prompt").and.returnValue(42);
+    var asker = new Asker();
+    //when
+    var result = asker.ask()
+    //then
+    expect(result).toEqual(42);
+  });
 });
