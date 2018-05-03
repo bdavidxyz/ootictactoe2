@@ -53,4 +53,11 @@ describe('ttt_new_game function', function() {
     //then
     expect(window.my_player2.getCoinAppearence()).toEqual("o")
   });
+  it('should have a board', function() {
+    //given
+    //when
+    ttt_new_game()
+    //then
+    expect(board).toEqual([' ', ' ', ' ', ' ', ' ',' ', ' ', ' ', ' '])
+  });
 });
