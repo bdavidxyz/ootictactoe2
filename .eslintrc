@@ -11,6 +11,7 @@
     "expect": true,
     "describe": true,
     "it": true,
+    "spyOn": true,
     "Class": true,
     "ttt_new_game": true,
     "Player": true,
