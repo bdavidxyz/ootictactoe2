@@ -58,6 +58,6 @@ describe('ttt_new_game function', function() {
     //when
     ttt_new_game()
     //then
-    expect(board).toEqual([' ', ' ', ' ', ' ', ' ',' ', ' ', ' ', ' '])
+    expect(window.my_board.getArrayBoard()).toEqual([' ', ' ', ' ', ' ', ' ',' ', ' ', ' ', ' '])
   });
 });
