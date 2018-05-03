@@ -30,5 +30,12 @@ describe('ttt_new_game function', function() {
     //then
     expect(window.my_player1.getCoinAppearence()).toEqual("x")
   });
-
+  it('should create player 2', function() {
+    //given
+    expect(window.my_player2).not.toBeDefined()
+    //when
+    ttt_new_game()
+    //then
+    expect(window.my_player2).toBeDefined()
+  });
 });
