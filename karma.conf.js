@@ -18,7 +18,7 @@ module.exports = function(config) {
         'src/lib/*.js',
         'testlib/jasmine-jquery.js',
         'test/spec_helpers.js',
-        'test/*Spec.js',
+        'test/*spec.js',
         'src/utils/*.js',
         'src/my/*.js',
         {
