@@ -46,4 +46,11 @@ describe('ttt_new_game function', function() {
     //then
     expect(window.my_player2 instanceof Player).toEqual(true)
   });
+  it('should have an "o" coin appearance', function() {
+    //given
+    //when
+    ttt_new_game()
+    //then
+    expect(window.my_player2.getCoinAppearence()).toEqual("o")
+  });
 });
