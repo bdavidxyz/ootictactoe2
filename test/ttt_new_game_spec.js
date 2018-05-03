@@ -10,6 +10,7 @@ describe('ttt_new_game function', function() {
   });
   it('should create player 1', function() {
     //given
+    expect(window.my_player1).not.toBeDefined()
     //when
     ttt_new_game()
     //then
@@ -22,7 +23,7 @@ describe('ttt_new_game function', function() {
     //then
     expect(window.my_player1 instanceof Player).toEqual(true)
   });
-  it('should have an "x" coin', function() {
+  it('should have an "x" coin appearance', function() {
     //given
     //when
     ttt_new_game()
