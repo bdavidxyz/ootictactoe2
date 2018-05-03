@@ -39,4 +39,11 @@ describe('ttt_new_game function', function() {
     //then
     expect(window.my_player2).toBeDefined()
   });
+  it('should create my_player2 as instanceof Player', function() {
+    //given
+    //when
+    ttt_new_game()
+    //then
+    expect(window.my_player2 instanceof Player).toEqual(true)
+  });
 });
