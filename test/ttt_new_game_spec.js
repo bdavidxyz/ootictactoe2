@@ -53,11 +53,18 @@ describe('ttt_new_game function', function() {
     //then
     expect(window.my_player2.getCoinAppearence()).toEqual("o")
   });
-  it('should have a board', function() {
+  it('should create my_board', function() {
     //given
     //when
     ttt_new_game()
     //then
-    expect(window.my_board.getArrayBoard()).toEqual([' ', ' ', ' ', ' ', ' ',' ', ' ', ' ', ' '])
+    expect(window.my_board).toBeDefined()
+  });
+  it('should create my_board as instanceof Board', function() {
+    //given
+    //when
+    ttt_new_game()
+    //then
+    expect(window.my_board instanceof Board).toEqual(true)
   });
 });
