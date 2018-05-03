@@ -17,6 +17,13 @@ describe('ttt_new_game function', function() {
       //when
       ttt_new_game()
       //then
-      expect(window.player1 instanceof Player).toBe(true)
+      expect(window.player1 instanceof Player).toEqual(true)
+    });
+    it('should have an "x" coin' , function() {
+      //given
+      //when
+      ttt_new_game()
+      //then
+      expect(window.player1.getCoin()).toEqual("x")
     });
 });    
