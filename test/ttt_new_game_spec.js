@@ -74,4 +74,11 @@ describe('ttt_new_game function', function() {
     //then
 +   expect(window.my_board.getArrayBoard()).toEqual([' ', ' ', ' ', ' ', ' ',' ', ' ', ' ', ' '])
   });
+  it('should create a TicTacToe', function() {
+    //given
+    //when
+    ttt_new_game()
+    //then
+    expect(game).toBeDefined()
+  });
 });
