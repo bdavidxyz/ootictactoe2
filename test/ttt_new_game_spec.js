@@ -1,6 +1,7 @@
 describe('ttt_new_game function', function() {
   beforeEach(function() {
     delete window.my_player1
+    delete window.my_player2
   })
   it('should be defined', function() {
     //given
