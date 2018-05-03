@@ -81,4 +81,11 @@ describe('ttt_new_game function', function() {
     //then
     expect(window.my_game).toBeDefined()
   });
+  it('should start a game', function() {
+    //given
+    //when
+    ttt_new_game()
+    //then
+    expect(game.start).toBeDefined()
+  });  
 });
