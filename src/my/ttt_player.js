@@ -3,15 +3,10 @@
 var Player = Class({
 
   constructor: function (name, coinAppearance) {
-    // super might promote current instance
-    var self = this.super();
-    this.coinAppearance = coinAppearance
-    this.name = name
-    // and remember to return it
-    return self;
+    this._coinAppearance = coinAppearance
+    this._name = name
   },
-
   getCoinAppearence: function () {
-    return this.coinAppearance
+    return this._coinAppearance
   }
 })
