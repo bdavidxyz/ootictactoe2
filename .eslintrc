@@ -15,6 +15,7 @@
     "ttt_new_game": true,
     "Player": true,
     "Board": true,
+    "Asker": true,
     "TicTacToe": true
   },
   "parserOptions": {
