@@ -1,0 +1,18 @@
+{
+  "browser": true,
+  "unused": false,
+  "strict": false,
+  "asi": true,
+  "eqeqeq": true,
+  "globals": {
+    "_": true,
+    "$": true,
+    "prompt": true,
+    "expect": true,
+    "describe": true,
+    "it": true,
+    "moment": true,
+    "Big": true,
+    "Class": true
+  }
+}

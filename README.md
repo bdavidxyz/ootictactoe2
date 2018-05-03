@@ -1,0 +1,23 @@
+# jsstarter
+
+
+Just enough files to start to learn vanilla JavaScript in TDD style.
+
+jQuery & Lodash are already loaded, you can also test jQuery [against isolated HTML](https://github.com/bdavidxyz/jsstarter/blob/master/test/load_fixture_Spec.js).
+
+NodeJS must be installed on your system.
+
+To run as CI mode w/ browsers:
+```
+npm install
+npm test
+```
+
+After that, coverage can be seen under the coverage/ folder.
+
+To package all your files into one :
+```
+$(npm bin)/gulp compress
+```
+
+Files in `test/` folder must end with `Spec.js` to be ran. (Can change this in [karma.conf.js](https://github.com/bdavidxyz/jsstarter/blob/master/karma.conf.js#L25))
