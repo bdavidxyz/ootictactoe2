@@ -3,6 +3,7 @@
   "unused": false,
   "strict": false,
   "asi": true,
+  "indent": "2",
   "eqeqeq": true,
   "globals": {
     "_": true,
