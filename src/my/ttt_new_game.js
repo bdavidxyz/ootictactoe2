@@ -1,5 +1,3 @@
-/*eslint no-unused-vars: ["error", { "varsIgnorePattern": "ttt_new_game" }]*/
-
 function ttt_new_game() {
   var player1 = new Player('player1', 'x')
   var player2 = new Player('player2', 'o')
