@@ -8,4 +8,3 @@ function ttt_new_game() {
   game.start()
   return [player1, player2, board, game]
 }
-
