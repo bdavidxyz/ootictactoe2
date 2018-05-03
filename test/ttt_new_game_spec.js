@@ -24,6 +24,6 @@ describe('ttt_new_game function', function() {
       //when
       ttt_new_game()
       //then
-      expect(window.player1.getCoin()).toEqual("x")
+      expect(window.player1.getCoinAppearence()).toEqual("x")
     });
 });    
