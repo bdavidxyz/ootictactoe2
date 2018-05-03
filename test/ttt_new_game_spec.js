@@ -86,6 +86,6 @@ describe('ttt_new_game function', function() {
     //when
     ttt_new_game()
     //then
-    expect(game.start).toBeDefined()
+    expect(my_game.start).toBeDefined()
   });  
 });

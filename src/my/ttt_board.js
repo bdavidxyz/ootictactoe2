@@ -2,11 +2,11 @@
 
 
 var Board = Class({
-  constructor: function(arrayBoard){
+  constructor: function(arrayBoard) {
     this._arrayBoard = arrayBoard
   },
 
-  getArrayBoard : function(){
+  getArrayBoard : function() {
     return this._arrayBoard
   }
 
