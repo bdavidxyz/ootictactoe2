@@ -3,9 +3,10 @@
 
 var Board = Class({
   constructor: function() {
+    this._isFull = false
   },
   isFull: function () {
-    return false
+    return this._isFull
   }
 
 })
