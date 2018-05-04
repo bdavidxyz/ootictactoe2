@@ -12,5 +12,11 @@ describe('ttt_referee_spec.js', function() {
     //then
     expect(r.nextTurn).toBeDefined()
   });
-  
+  it('nextTurn instance method should switch player', function() {
+    //given
+    //when
+    var r = new Referee()
+    //then
+    expect(r.nextTurn()).toHaveBeenCalled()
+  });
 });
