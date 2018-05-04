@@ -56,6 +56,6 @@ describe('ttt_tictactoe_spec.js', function() {
     //when
     game.start()
     //then
-    expect(game.getReferee.nextTurn.calls.count()).toEqual(9);
+    expect(game.getReferee().nextTurn.calls.count()).toEqual(9);
   });
 });
