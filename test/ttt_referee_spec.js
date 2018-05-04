@@ -60,4 +60,14 @@ describe('ttt_referee_spec.js', function() {
     //then
     expect(r.nextTurn()).toEqual("GAME_OVER")
   });
+  it('nextTurn should return GAME_CONTINUE with nominal instantiation', function() {
+    //given
+    var p1 = new Player('player1', 'x')
+    var p2 = new Player('player2', 'o')
+    var b = new Board()
+    //when
+    var r = new Referee(p1, p2, b);
+    //then
+    expect(r.nextTurn()).toEqual("GAME_OVER")
+  });
 });
