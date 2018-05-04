@@ -21,20 +21,31 @@ describe('ttt_referee_spec.js', function() {
   });
   it('nextTurn should return GAME_OVER if player1 wants to quit', function() {
     //given
-    //when
     var p1 = new Player('player1', 'x')
     var r = new Referee(p1);
+    //when
     p1.setWantsToQuit(true)
     //then
     expect(r.nextTurn()).toEqual("GAME_OVER")
   });
   it('nextTurn should return GAME_OVER if player2 wants to quit', function() {
     //given
-    //when
     var p1 = new Player('player1', 'x')
     var p2 = new Player('player2', 'o')
     var r = new Referee(p1, p2);
+    //when
     p2.setWantsToQuit(true)
+    //then
+    expect(r.nextTurn()).toEqual("GAME_OVER")
+  });
+  it('nextTurn should return GAME_OVER if board is full', function() {
+    //given
+    var p1 = new Player('player1', 'x')
+    var p2 = new Player('player2', 'o')
+    var b = new Board()
+    var r = new Referee(p1, p2, b);
+    //when
+    spyOn(b, 'isFull').and.returnValue(true)
     //then
     expect(r.nextTurn()).toEqual("GAME_OVER")
   });
