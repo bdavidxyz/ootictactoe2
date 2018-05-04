@@ -2,6 +2,10 @@ describe('ttt_tictactoe_spec.js', function() {
   it('TicTacToe should be defined', function() {
     expect(TicTacToe).toBeDefined()
   });
+  it('getStatus instance method should be defined', function() {
+    var game = new TicTacToe();
+    expect(game.getStatus).toBeDefined()
+  });
 /*  it('Should be able to be asked', function() {
     var asker = new Asker();
     expect(asker.ask).toBeDefined()
