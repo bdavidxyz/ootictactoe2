@@ -2,8 +2,8 @@
 
 var TicTacToe = Class({
 
-  constructor: function (status) {
-    this._status = status
+  constructor: function () {
+    this._status = "NOT_STARTED"
   },
   start : function() {
 
