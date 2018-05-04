@@ -11,5 +11,8 @@ var TicTacToe = Class({
   },
   getStatus : function() {
     return this._status
+  },
+  getReferee : function() {
+    return this._referee
   }
 })
