@@ -27086,7 +27086,14 @@ var Asker = Class({
 
 var Board = Class({
   constructor: function() {
+    this._isFull = false
+  },
+  isFull: function () {
+    return this._isFull
+  },
+  threeCoinAligned: function () {
   }
+
 })
 
 /*eslint no-unused-vars: ["error", { "varsIgnorePattern": "ttt_new_game" }]*/
@@ -27106,24 +27113,63 @@ var Player = Class({
   constructor: function (name, coinAppearance) {
     this._coinAppearance = coinAppearance
     this._name = name
+    this._wantsToQuit = false
   },
   getCoinAppearence: function () {
     return this._coinAppearance
+  },
+  getWantsToQuit: function () {
+    return this._wantsToQuit
+  },
+  setWantsToQuit: function (wantsToQuit) {
+    this._wantsToQuit = !!wantsToQuit;
   }
+
+})
+
+/*eslint no-unused-vars: ["error", { "varsIgnorePattern": "Referee" }]*/
+
+var Referee = Class({
+
+  constructor: function (player1, player2, board) {
+    this._player1 = player1
+    this._player2 = player2
+    this._board = board
+  },
+  nextTurn: function () {
+    if (this._player1 && this._player1.getWantsToQuit()) {
+      return "GAME_OVER"
+    }
+    if (this._player2 && this._player2.getWantsToQuit()) {
+      return "GAME_OVER"
+    }
+    if (this._board && this._board.isFull()) {
+      return "GAME_OVER"
+    }
+    if (this._board && this._board.threeCoinAligned()) {
+      return "GAME_OVER"
+    }
+    return "GAME_CONTINUE"
+  }
+
 })
 
 /*eslint no-unused-vars: ["error", { "varsIgnorePattern": "TicTacToe" }]*/
 
 var TicTacToe = Class({
-
-  constructor: function () {
+  constructor: function (player1, player2, board) {
     this._status = "NOT_STARTED"
+    this._referee = new Referee(player1, player2, board)
   },
   start : function() {
-    this._status = "STARTED"    
+    this._status = "STARTED"
+    _.times(9, this._referee.nextTurn)     
   },
   getStatus : function() {
     return this._status
+  },
+  getReferee : function() {
+    return this._referee
   }
 })
 
