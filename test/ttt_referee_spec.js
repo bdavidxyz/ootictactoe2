@@ -24,7 +24,7 @@ describe('ttt_referee_spec.js', function() {
     //when
     var p1 = new Player('player1', 'x')
     var r = new Referee(p1);
-    r.getPlayer1().setWantsToQuit(true)
+    p1.setWantsToQuit(true)
     //then
     expect(r.nextTurn()).toEqual("GAME_OVER")
   });
