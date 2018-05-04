@@ -62,7 +62,7 @@ describe('ttt_new_game function', function() {
     //then
     expect(window.my_player2.getCoinAppearence()).toEqual("o")
   });
-/*  it('should create my_board', function() {
+  it('should create my_board', function() {
     //given
 +   expect(window.my_board).not.toBeDefined()
     //when
@@ -70,7 +70,7 @@ describe('ttt_new_game function', function() {
     //then
 +   expect(window.my_board).toBeDefined()
   });
-  it('should create my_board as instanceof Board', function() {
+/*  it('should create my_board as instanceof Board', function() {
     //given
 +   expect(window.my_board).not.toBeDefined()
     //when
@@ -100,5 +100,5 @@ describe('ttt_new_game function', function() {
     //then
     expect(window.my_game.start).toBeDefined()
   }); 
-*/ 
+ */
 });
