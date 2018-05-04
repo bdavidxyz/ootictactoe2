@@ -6,7 +6,7 @@ var TicTacToe = Class({
     this._status = "NOT_STARTED"
   },
   start : function() {
-
+    this._status = "STARTED"    
   },
   getStatus : function() {
     return this._status
