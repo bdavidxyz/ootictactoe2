@@ -2,9 +2,9 @@
 
 var TicTacToe = Class({
 
-  constructor: function () {
+  constructor: function (player1) {
     this._status = "NOT_STARTED"
-    this._referee = new Referee()
+    this._referee = new Referee(player1)
   },
   start : function() {
     this._status = "STARTED"
