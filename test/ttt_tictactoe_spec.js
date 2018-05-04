@@ -49,12 +49,12 @@ describe('ttt_tictactoe_spec.js', function() {
     //then
     expect(game.getStatus()).toEqual("STARTED")
   });
-/*  it('should launch nine turns', function() {
+  it('should launch nine turns', function() {
     //given
     var game = new TicTacToe();
     //when
     game.start()
     //then
     expect(game.getReferee.nextTurn.calls.count()).toEqual(9);
-  });*/
+  });
 });

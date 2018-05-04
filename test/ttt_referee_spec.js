@@ -5,14 +5,14 @@ describe('ttt_referee_spec.js', function() {
     //then
     expect(Referee).toBeDefined()
   });
-/*  it('getStatus instance method should be defined', function() {
+  it('nextTurn instance method should be defined', function() {
     //given
     //when
-    var game = new TicTacToe();
+    var r = new Referee();
     //then
-    expect(game.getStatus).toBeDefined()
+    expect(r.nextTurn).toBeDefined()
   });
-  it('getReferee instance method should be defined', function() {
+/*  it('getReferee instance method should be defined', function() {
     //given
     //when
     var game = new TicTacToe();
