@@ -3,5 +3,8 @@
 
 var Board = Class({
   constructor: function() {
+  },
+  isFull: function () {
   }
+
 })
