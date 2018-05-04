@@ -68,37 +68,32 @@ describe('ttt_new_game function', function() {
     //when
     ttt_new_game()
     //then
-+   expect(window.my_board).toBeDefined()
+    expect(window.my_board).toBeDefined()
   });
   it('should create my_board as instanceof Board', function() {
     //given
-+   expect(window.my_board).not.toBeDefined()
+    expect(window.my_board).not.toBeDefined()
     //when
     ttt_new_game()
     //then
     expect(window.my_board instanceof Board).toEqual(true)
   });
- /* it('should use an array for the Board', function() {
+
+  it('should create a game', function() {
     //given
-+   expect(window.my_board).not.toBeDefined()
-    //when
-    ttt_new_game()
-    //then
-+   expect(window.my_board.getArrayBoard()).toEqual([' ', ' ', ' ', ' ', ' ',' ', ' ', ' ', ' '])
-  });
-  it('should create a TicTacToe', function() {
-    //given
+    expect(window.my_game).not.toBeDefined()
     //when
     ttt_new_game()
     //then
     expect(window.my_game).toBeDefined()
   });
-  it('should start a game', function() {
+/*  it('should start a game', function() {
     //given
+   expect(window.my_game).not.toBeDefined()
     //when
     ttt_new_game()
     //then
     expect(window.my_game.start).toBeDefined()
-  }); 
- */
+  }); */
+
 });
