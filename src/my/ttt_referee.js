@@ -17,6 +17,9 @@ var Referee = Class({
     if (this._board && this._board.isFull()) {
       return "GAME_OVER"
     }
+    if (this._board && this._board.threeCoinAligned()) {
+      return "GAME_OVER"
+    }
     return "GAME_CONTINUE"
   }
 
