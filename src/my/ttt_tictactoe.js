@@ -3,5 +3,10 @@
 var TicTacToe = Class({
   start : function() {
 
+  },
+  getStatus : function() {
+
   }
+
+
 })
