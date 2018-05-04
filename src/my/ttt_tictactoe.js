@@ -1,9 +1,9 @@
 /*eslint no-unused-vars: ["error", { "varsIgnorePattern": "TicTacToe" }]*/
 
 var TicTacToe = Class({
-  constructor: function (player1, player2) {
+  constructor: function (player1, player2, board) {
     this._status = "NOT_STARTED"
-    this._referee = new Referee(player1, player2)
+    this._referee = new Referee(player1, player2, board)
   },
   start : function() {
     this._status = "STARTED"
