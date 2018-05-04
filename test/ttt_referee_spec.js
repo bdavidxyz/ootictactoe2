@@ -49,4 +49,15 @@ describe('ttt_referee_spec.js', function() {
     //then
     expect(r.nextTurn()).toEqual("GAME_OVER")
   });
+  it('nextTurn should return GAME_OVER if there is 3 coin aligned', function() {
+    //given
+    var p1 = new Player('player1', 'x')
+    var p2 = new Player('player2', 'o')
+    var b = new Board()
+    var r = new Referee(p1, p2, b);
+    //when
+    spyOn(b, 'threeCoinAligned').and.returnValue('x')
+    //then
+    expect(r.nextTurn()).toEqual("GAME_OVER")
+  });
 });
