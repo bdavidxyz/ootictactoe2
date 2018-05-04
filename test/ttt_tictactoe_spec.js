@@ -52,6 +52,7 @@ describe('ttt_tictactoe_spec.js', function() {
   it('should launch nine turns', function() {
     //given
     var game = new TicTacToe();
+    spyOn(game.getReferee(), "nextTurn")
     //when
     game.start()
     //then
