@@ -4,5 +4,9 @@ var Referee = Class({
 
   constructor: function () {
 
+  },
+  nextTurn: function () {
+
   }
+
 })
