@@ -68,6 +68,6 @@ describe('ttt_referee_spec.js', function() {
     //when
     var r = new Referee(p1, p2, b);
     //then
-    expect(r.nextTurn()).toEqual("GAME_OVER")
+    expect(r.nextTurn()).toEqual("GAME_CONTINUE")
   });
 });
