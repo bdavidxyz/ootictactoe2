@@ -6,9 +6,13 @@ describe('ttt_tictactoe_spec.js', function() {
     var game = new TicTacToe();
     expect(game.getStatus).toBeDefined()
   });
-  it('getStatus instance method should be defined', function() {
+  it('start instance method should be defined', function() {
     var game = new TicTacToe();
     expect(game.start).toBeDefined()
+  });
+  it('should have status NOT_STARTED by default', function() {
+    var game = new TicTacToe();
+    expect(game.getStatus()).toEqual("NOT_STARTED")
   });
 /*  it('Should be able to be asked', function() {
     var asker = new Asker();
