@@ -8,4 +8,4 @@ describe("External libs", function () {
     expect(_.VERSION).toEqual('4.17.5');
     expect($.fn.jquery).toEqual('2.2.4');
   })
-})
+});

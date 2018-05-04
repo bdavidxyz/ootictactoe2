@@ -16,6 +16,7 @@
     "Class": true,
     "ttt_new_game": true,
     "Player": true,
+    "Referee": true,
     "Board": true,
     "Asker": true,
     "TicTacToe": true
