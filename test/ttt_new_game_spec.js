@@ -70,7 +70,7 @@ describe('ttt_new_game function', function() {
     //then
 +   expect(window.my_board).toBeDefined()
   });
-/*  it('should create my_board as instanceof Board', function() {
+  it('should create my_board as instanceof Board', function() {
     //given
 +   expect(window.my_board).not.toBeDefined()
     //when
@@ -78,7 +78,7 @@ describe('ttt_new_game function', function() {
     //then
     expect(window.my_board instanceof Board).toEqual(true)
   });
-  it('should use an array for the Board', function() {
+ /* it('should use an array for the Board', function() {
     //given
 +   expect(window.my_board).not.toBeDefined()
     //when
