@@ -10,8 +10,8 @@ describe('ttt_board_spec.js', function() {
     var board = new Board()
     expect(board.isFull).toBeDefined();
   });
-  // it('Should not full by default', function() {
-  //   var board = new Board()
-  //   expect(board.isFull).toBeDefined();
-  // });
+  it('Should not be full by default', function() {
+    var board = new Board()
+    expect(board.isFull()).toEqual(false);
+  });
 });

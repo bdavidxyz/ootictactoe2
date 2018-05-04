@@ -5,6 +5,7 @@ var Board = Class({
   constructor: function() {
   },
   isFull: function () {
+    return false
   }
 
 })
