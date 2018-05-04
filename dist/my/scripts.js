@@ -27073,14 +27073,34 @@ return jQuery;
   }
 }.call(this));
 
+/*eslint no-unused-vars: ["error", { "varsIgnorePattern": "Asker" }]*/
+
+var Asker = Class({
+  ask: function (question) {
+    return prompt(question);
+  }
+});
+
 function ttt_new_game() {
-var player1 = new Player('player1', 'x')
-var player2 = new Player('player2', 'o')
-var board = new Board()
-var game = new TicTacToe(player1, player2, board)
-game.start()
-return [player1, player2, board, game]
+  window.player1 = new Player('player1', 'x')
+/*  var player2 = new Player('player2', 'o')
+  var board = new Board()
+  var game = new TicTacToe(player1, player2, board)
+  game.start()*/
 }
+
+/*eslint no-unused-vars: ["error", { "varsIgnorePattern": "Player" }]*/
+
+var Player = Class({
+
+  constructor: function (name, coinAppearance) {
+    this.coinAppearance = coinAppearance
+    this.name = name
+  },
+  getCoinAppearence: function () {
+    return this.coinAppearance
+  }
+})
 
 if (typeof _  == "function") {
   _.mixin({
