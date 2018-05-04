@@ -6,7 +6,7 @@ var Referee = Class({
 
   },
   nextTurn: function () {
-
+    return "GAME_CONTINUE"
   }
 
 })

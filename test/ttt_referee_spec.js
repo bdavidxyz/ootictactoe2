@@ -12,4 +12,19 @@ describe('ttt_referee_spec.js', function() {
     //then
     expect(r.nextTurn).toBeDefined()
   });
+  it('nextTurn should return GAME_CONTINUE by default ', function() {
+    //given
+    //when
+    var r = new Referee();
+    //then
+    expect(r.nextTurn()).toEqual("GAME_CONTINUE")
+  });
+  // it('nextTurn should return GAME_OVER if player1 wants to quit', function() {
+  //   //given
+  //   //when
+  //   var r = new Referee();
+  //   r.getPlayer1().setWantsToQuit(true)
+  //   //then
+  //   expect(r.nextTurn()).toEqual("GAME_OVER")
+  // });
 });
