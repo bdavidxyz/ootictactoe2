@@ -93,6 +93,6 @@ describe('ttt_new_game function', function() {
     //when
     ttt_new_game()
     //then
-    expect(window.my_game.getStatus()).toEqual("started")
+    expect(window.my_game.getStatus()).toEqual("STARTED")
   }); 
 });
