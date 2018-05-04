@@ -7,6 +7,8 @@ var Board = Class({
   },
   isFull: function () {
     return this._isFull
+  },
+  threeCoinAligned: function () {
   }
 
 })

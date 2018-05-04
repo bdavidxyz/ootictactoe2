@@ -26,4 +26,11 @@ describe('ttt_board_spec.js', function() {
     //then
     expect(board.isFull()).toEqual(false);
   });
+  it('Should have the threeCoinAligned function', function() {
+    //given
+    //when
+    var board = new Board()
+    //then
+    expect(_.isFunction(board.threeCoinAligned)).toEqual(true);
+  });
 });
