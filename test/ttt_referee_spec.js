@@ -28,4 +28,14 @@ describe('ttt_referee_spec.js', function() {
     //then
     expect(r.nextTurn()).toEqual("GAME_OVER")
   });
+  it('nextTurn should return GAME_OVER if player2 wants to quit', function() {
+    //given
+    //when
+    var p1 = new Player('player1', 'x')
+    var p2 = new Player('player2', 'o')
+    var r = new Referee(p1, p2);
+    p2.setWantsToQuit(true)
+    //then
+    expect(r.nextTurn()).toEqual("GAME_OVER")
+  });
 });
