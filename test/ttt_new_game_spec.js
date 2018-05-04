@@ -1,7 +1,5 @@
 describe('ttt_new_game function', function() {
   beforeEach(function() {
-/*    delete window.my_player1
-    delete window.my_player2*/
     _.forOwn(window, function(value, key) {
       if (_.startsWith(key, "my_")) {
         delete window[key]
