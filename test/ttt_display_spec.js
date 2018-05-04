@@ -5,6 +5,7 @@ describe('ttt_display_spec.js', function() {
   it('should display something', function() {
     //given
     //when
+    ttt_display()
     //then
     expect(ttt_display).toHaveBeenCalledWith("something")
   });
