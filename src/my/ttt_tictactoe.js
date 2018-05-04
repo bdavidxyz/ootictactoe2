@@ -4,7 +4,7 @@ var TicTacToe = Class({
 
   constructor: function () {
     this._status = "NOT_STARTED"
-    this._referee = new Referee()
+//    this._referee = new Referee()
   },
   start : function() {
     this._status = "STARTED"    
@@ -13,6 +13,6 @@ var TicTacToe = Class({
     return this._status
   },
   getReferee : function() {
-    return this._referee
+//    return this._referee
   }
 })
