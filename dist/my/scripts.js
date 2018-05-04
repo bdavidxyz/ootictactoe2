@@ -27081,12 +27081,22 @@ var Asker = Class({
   }
 });
 
+/*eslint no-unused-vars: ["error", { "varsIgnorePattern": "Board" }]*/
+
+
+var Board = Class({
+  constructor: function() {
+  }
+})
+
+/*eslint no-unused-vars: ["error", { "varsIgnorePattern": "ttt_new_game" }]*/
+
 function ttt_new_game() {
-  window.player1 = new Player('player1', 'x')
-/*  var player2 = new Player('player2', 'o')
-  var board = new Board()
-  var game = new TicTacToe(player1, player2, board)
-  game.start()*/
+  window.my_player1 = new Player('player1', 'x')
+  window.my_player2 = new Player('player2', 'o')
+  window.my_board = new Board()
+  window.my_game = new TicTacToe(window.my_player1, window.my_player2, window.my_board)
+  window.my_game.start()
 }
 
 /*eslint no-unused-vars: ["error", { "varsIgnorePattern": "Player" }]*/
@@ -27094,11 +27104,26 @@ function ttt_new_game() {
 var Player = Class({
 
   constructor: function (name, coinAppearance) {
-    this.coinAppearance = coinAppearance
-    this.name = name
+    this._coinAppearance = coinAppearance
+    this._name = name
   },
   getCoinAppearence: function () {
-    return this.coinAppearance
+    return this._coinAppearance
+  }
+})
+
+/*eslint no-unused-vars: ["error", { "varsIgnorePattern": "TicTacToe" }]*/
+
+var TicTacToe = Class({
+
+  constructor: function () {
+    this._status = "NOT_STARTED"
+  },
+  start : function() {
+    this._status = "STARTED"    
+  },
+  getStatus : function() {
+    return this._status
   }
 })
 
